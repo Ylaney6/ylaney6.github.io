@@ -32,7 +32,9 @@ jobs:
         run: npm install -g @bubblewrap/cli
 
       - name: Restore signing keystore
-        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/android.keystore
+        run: |
+          mkdir -p android
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/android.keystore
 
       - name: Scaffold Android project from twa-manifest.json
         working-directory: android

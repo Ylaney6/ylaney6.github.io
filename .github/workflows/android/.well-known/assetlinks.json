@@ -1,8 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.yuh25505.daoyu",
-    "sha256_cert_fingerprints": ["A3:39:68:7E:EA:CD:40:A6:0C:31:66:36:3C:D8:2D:7A:EE:48:B8:F6:79:D6:C5:D1:FE:40:33:49:06:93:97:D3"]
-  }
-}]
